@@ -18,11 +18,11 @@
 }
 /* line 14, ../../sass/echo-bars.sass */
 .echo-bars li.echo-active {
-  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/longbar.png);
+  background-image: url(http://ianzapolsky.com/echo-site/images/longbar.png);
   padding-left: 165px;
 }
-/* line 18, ../../sass/echo-bars.sass */
+/* line 20, ../../sass/echo-bars.sass */
 .echo-bars li.echo-inactive {
-  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/smallerbar.png);
+  background-image: url(http://ianzapolsky.com/echo-site/images/smallerbar.png);
   padding-left: 60px;
 }

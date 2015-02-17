@@ -46,18 +46,18 @@
 /* line 31, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-left-arrow {
   float: left;
-  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/left.png);
+  background-image: url(http://ianzapolsky.com/echo-site/images/left.png);
 }
-/* line 35, ../../sass/echo-arrows.sass */
+/* line 37, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-left-arrow:hover {
-  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/leftyellow.png);
-}
-/* line 38, ../../sass/echo-arrows.sass */
-.echo-arrows .echo-right-arrow {
-  float: right;
-  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/right.png);
+  background-image: url(http://ianzapolsky.com/echo-site/images/leftyellow.png);
 }
 /* line 42, ../../sass/echo-arrows.sass */
+.echo-arrows .echo-right-arrow {
+  float: right;
+  background-image: url(http://ianzapolsky.com/echo-site/images/right.png);
+}
+/* line 48, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-right-arrow:hover {
-  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/rightyellow.png);
+  background-image: url(http://ianzapolsky.com/echo-site/images/rightyellow.png);
 }
