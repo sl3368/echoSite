@@ -1,0 +1,63 @@
+/* line 3, ../../sass/echo-text.sass */
+#echo-content .page-content {
+  color: #eee;
+}
+/* line 6, ../../sass/echo-text.sass */
+#echo-content .page-content.padded {
+  padding-left: 100px;
+}
+@media (max-width: 560px) {
+  /* line 6, ../../sass/echo-text.sass */
+  #echo-content .page-content.padded {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 6, ../../sass/echo-text.sass */
+  #echo-content .page-content.padded {
+    padding-left: 10px;
+  }
+}
+/* line 14, ../../sass/echo-text.sass */
+#echo-content .page-content h1 {
+  font-size: 70px;
+}
+@media (max-width: 900px) {
+  /* line 14, ../../sass/echo-text.sass */
+  #echo-content .page-content h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 14, ../../sass/echo-text.sass */
+  #echo-content .page-content h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 700px) {
+  /* line 14, ../../sass/echo-text.sass */
+  #echo-content .page-content h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 450px) {
+  /* line 14, ../../sass/echo-text.sass */
+  #echo-content .page-content h1 {
+    font-size: 27px;
+  }
+}
+/* line 27, ../../sass/echo-text.sass */
+#echo-content .page-content a {
+  color: #eee;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+/* line 32, ../../sass/echo-text.sass */
+#echo-content .page-content a:hover {
+  text-decoration: none;
+  color: #F9D000 !important;
+}
+/* line 36, ../../sass/echo-text.sass */
+#echo-content .page-content a:visited {
+  text-decoration: none;
+}

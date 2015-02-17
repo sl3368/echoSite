@@ -1,0 +1,289 @@
+/* line 1, ../../sass/echo-main.sass */
+body {
+  background: none;
+}
+
+/* line 4, ../../sass/echo-main.sass */
+.echo-background {
+  background: url(file:///Users/ianzapolsky/projects/echo-site/images/echo_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 11, ../../sass/echo-main.sass */
+.echo-container {
+  padding: 20px;
+}
+
+/* line 14, ../../sass/echo-main.sass */
+.echo-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 18, ../../sass/echo-main.sass */
+.echo-download {
+  color: #eee;
+}
+@media (max-width: 500px) {
+  /* line 18, ../../sass/echo-main.sass */
+  .echo-download {
+    display: none;
+  }
+}
+/* line 24, ../../sass/echo-main.sass */
+.echo-download h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  margin-left: -135px;
+  transition: all 0.5s;
+}
+/* line 32, ../../sass/echo-main.sass */
+.echo-download a {
+  color: #eee;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+/* line 37, ../../sass/echo-main.sass */
+.echo-download a:hover {
+  text-decoration: none;
+  color: #F9D000 !important;
+}
+/* line 41, ../../sass/echo-main.sass */
+.echo-download a:visited {
+  text-decoration: none;
+}
+
+/* line 1, ../../sass/echo-arrows.sass */
+.echo-arrows {
+  position: absolute;
+  top: 0;
+  margin-top: 11%;
+}
+@media (max-width: 992px) {
+  /* line 1, ../../sass/echo-arrows.sass */
+  .echo-arrows {
+    margin-top: 15%;
+  }
+}
+@media (max-width: 750px) {
+  /* line 1, ../../sass/echo-arrows.sass */
+  .echo-arrows {
+    margin-top: 10%;
+    position: relative;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+@media (max-width: 750px) and (max-width: 600px) {
+  /* line 1, ../../sass/echo-arrows.sass */
+  .echo-arrows {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 750px) and (max-width: 400px) {
+  /* line 1, ../../sass/echo-arrows.sass */
+  .echo-arrows {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* line 23, ../../sass/echo-arrows.sass */
+.echo-arrows .echo-left-arrow, .echo-arrows .echo-right-arrow {
+  height: 40px;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  cursor: pointer;
+  transition: all 1s;
+}
+/* line 31, ../../sass/echo-arrows.sass */
+.echo-arrows .echo-left-arrow {
+  float: left;
+  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/left.png);
+}
+/* line 35, ../../sass/echo-arrows.sass */
+.echo-arrows .echo-left-arrow:hover {
+  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/leftyellow.png);
+}
+/* line 38, ../../sass/echo-arrows.sass */
+.echo-arrows .echo-right-arrow {
+  float: right;
+  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/right.png);
+}
+/* line 42, ../../sass/echo-arrows.sass */
+.echo-arrows .echo-right-arrow:hover {
+  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/rightyellow.png);
+}
+
+/* line 1, ../../sass/echo-bars.sass */
+.echo-bars {
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  /* line 1, ../../sass/echo-bars.sass */
+  .echo-bars {
+    display: none;
+  }
+}
+/* line 7, ../../sass/echo-bars.sass */
+.echo-bars li {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  margin-right: 20px;
+  transition: all 1s;
+}
+/* line 14, ../../sass/echo-bars.sass */
+.echo-bars li.echo-active {
+  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/longbar.png);
+  padding-left: 165px;
+}
+/* line 18, ../../sass/echo-bars.sass */
+.echo-bars li.echo-inactive {
+  background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/smallerbar.png);
+  padding-left: 60px;
+}
+
+/* line 3, ../../sass/echo-slider.sass */
+#echo-content {
+  width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 8, ../../sass/echo-slider.sass */
+#echo-content .pan {
+  width: 10000px;
+  position: static;
+}
+/* line 12, ../../sass/echo-slider.sass */
+#echo-content .page {
+  width: 1200px;
+  max-height: 400px;
+  float: left;
+  display: inline-block;
+  margin-right: 1200px;
+  overflow: hidden;
+}
+
+/* line 3, ../../sass/echo-text.sass */
+#echo-content .page-content {
+  color: #eee;
+}
+/* line 6, ../../sass/echo-text.sass */
+#echo-content .page-content.padded {
+  padding-left: 100px;
+}
+@media (max-width: 560px) {
+  /* line 6, ../../sass/echo-text.sass */
+  #echo-content .page-content.padded {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 6, ../../sass/echo-text.sass */
+  #echo-content .page-content.padded {
+    padding-left: 10px;
+  }
+}
+/* line 14, ../../sass/echo-text.sass */
+#echo-content .page-content h1 {
+  font-size: 70px;
+}
+@media (max-width: 900px) {
+  /* line 14, ../../sass/echo-text.sass */
+  #echo-content .page-content h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 14, ../../sass/echo-text.sass */
+  #echo-content .page-content h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 700px) {
+  /* line 14, ../../sass/echo-text.sass */
+  #echo-content .page-content h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 450px) {
+  /* line 14, ../../sass/echo-text.sass */
+  #echo-content .page-content h1 {
+    font-size: 27px;
+  }
+}
+/* line 27, ../../sass/echo-text.sass */
+#echo-content .page-content a {
+  color: #eee;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+/* line 32, ../../sass/echo-text.sass */
+#echo-content .page-content a:hover {
+  text-decoration: none;
+  color: #F9D000 !important;
+}
+/* line 36, ../../sass/echo-text.sass */
+#echo-content .page-content a:visited {
+  text-decoration: none;
+}
+
+/* line 1, ../../sass/stock.sass */
+.centered {
+  float: none;
+  margin: auto;
+}
+
+/* line 5, ../../sass/stock.sass */
+.left-align {
+  text-align: left;
+}
+
+/* line 8, ../../sass/stock.sass */
+.right-align {
+  text-align: right;
+}
+
+/* line 11, ../../sass/stock.sass */
+.center-align {
+  text-align: center;
+}
+
+/* line 14, ../../sass/stock.sass */
+.cleared {
+  clear: left;
+}
+
+/* line 17, ../../sass/stock.sass */
+.hidden {
+  display: none;
+}
+
+/* line 20, ../../sass/stock.sass */
+.padder-lg {
+  min-height: 100px;
+}
+
+/* line 23, ../../sass/stock.sass */
+.padder-sm {
+  min-height: 50px;
+}
+
+/* line 26, ../../sass/stock.sass */
+.padder-responsive {
+  min-height: 150px;
+}
+@media (max-width: 500px) {
+  /* line 26, ../../sass/stock.sass */
+  .padder-responsive {
+    min-height: 50px;
+  }
+}

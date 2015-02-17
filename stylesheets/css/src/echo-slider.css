@@ -1,0 +1,20 @@
+/* line 3, ../../sass/echo-slider.sass */
+#echo-content {
+  width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 8, ../../sass/echo-slider.sass */
+#echo-content .pan {
+  width: 10000px;
+  position: static;
+}
+/* line 12, ../../sass/echo-slider.sass */
+#echo-content .page {
+  width: 1200px;
+  max-height: 400px;
+  float: left;
+  display: inline-block;
+  margin-right: 1200px;
+  overflow: hidden;
+}

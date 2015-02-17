@@ -1,0 +1,51 @@
+/* line 1, ../../sass/stock.sass */
+.centered {
+  float: none;
+  margin: auto;
+}
+
+/* line 5, ../../sass/stock.sass */
+.left-align {
+  text-align: left;
+}
+
+/* line 8, ../../sass/stock.sass */
+.right-align {
+  text-align: right;
+}
+
+/* line 11, ../../sass/stock.sass */
+.center-align {
+  text-align: center;
+}
+
+/* line 14, ../../sass/stock.sass */
+.cleared {
+  clear: left;
+}
+
+/* line 17, ../../sass/stock.sass */
+.hidden {
+  display: none;
+}
+
+/* line 20, ../../sass/stock.sass */
+.padder-lg {
+  min-height: 100px;
+}
+
+/* line 23, ../../sass/stock.sass */
+.padder-sm {
+  min-height: 50px;
+}
+
+/* line 26, ../../sass/stock.sass */
+.padder-responsive {
+  min-height: 150px;
+}
+@media (max-width: 500px) {
+  /* line 26, ../../sass/stock.sass */
+  .padder-responsive {
+    min-height: 50px;
+  }
+}

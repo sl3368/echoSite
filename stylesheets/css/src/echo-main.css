@@ -1,0 +1,59 @@
+/* line 1, ../../sass/echo-main.sass */
+body {
+  background: none;
+}
+
+/* line 4, ../../sass/echo-main.sass */
+.echo-background {
+  background: url(file:///Users/ianzapolsky/projects/echo-site/images/echo_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 11, ../../sass/echo-main.sass */
+.echo-container {
+  padding: 20px;
+}
+
+/* line 14, ../../sass/echo-main.sass */
+.echo-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 18, ../../sass/echo-main.sass */
+.echo-download {
+  color: #eee;
+}
+@media (max-width: 500px) {
+  /* line 18, ../../sass/echo-main.sass */
+  .echo-download {
+    display: none;
+  }
+}
+/* line 24, ../../sass/echo-main.sass */
+.echo-download h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  margin-left: -135px;
+  transition: all 0.5s;
+}
+/* line 32, ../../sass/echo-main.sass */
+.echo-download a {
+  color: #eee;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+/* line 37, ../../sass/echo-main.sass */
+.echo-download a:hover {
+  text-decoration: none;
+  color: #F9D000 !important;
+}
+/* line 41, ../../sass/echo-main.sass */
+.echo-download a:visited {
+  text-decoration: none;
+}

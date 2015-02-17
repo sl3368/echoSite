@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="echo-background" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>echo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="stylesheets/css/lib/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="stylesheets/css/src/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Page Content -->
+    <div class="container echo-container">
+        <div class="row">
+            <div class="centered padder-responsive">
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="centered center-align col-xs-12">
+                <div id="echo-content">
+                    <div class="pan">
+                        <div class="page">
+                            <img class="echo-logo" src="images/echologolarger.png"></img>
+                        </div>
+                        <div class="page">
+                            <div class="centered page-content">
+                                <h1>GIF</h1>
+                            </div>
+                        </div>
+                        <div class="page">
+                            <div class="left-align page-content padded">
+                                <h1><a class="echo-link" data-template-name="support">support</a></h1>
+                                <h1><a class="echo-link" data-template-name="privacy">privacy policy</a></h1>
+                                <h1><a class="echo-link" data-template-name="terms">terms & conditions</a></h1>
+                                <h1><a class="echo-link" data-template-name="team">about the team</a></h1>
+                            </div>
+                        </div>
+                        <div id="echo-dynamic" class="page">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="echo-arrows col-xs-12">
+                    <div class="echo-left-arrow"></div>
+                    <div class="echo-right-arrow"></div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="row">
+            <div class="centered center-align col-xs-12">
+                <div class="echo-download">
+                    <h1 id="echo-download-link"><a>Download</a></h1>
+                </div>
+                <ul class="echo-bars">
+                    <li class="echo-active" data-page-index="0"></li>
+                    <li class="echo-inactive" data-page-index="1"></li>
+                    <li class="echo-inactive" data-page-index="2"></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <script type="text/template" id="support">
+      <div class="left-align page-content padded">
+          <h1>support</h1>
+          <p>Here is a short paragraph about echo support.</p>
+      </div>
+    </script>
+
+    <script type="text/template" id="privacy">
+      <div class="left-align page-content padded">
+          <h1>privacy</h1>
+          <p>Here is a short paragraph about echo privacy.</p>
+      </div>
+    </script>
+
+    <script type="text/template" id="terms">
+      <div class="left-align page-content padded">
+          <h1>terms</h1>
+          <p>Here is a short paragraph about echo terms.</p>
+      </div>
+    </script>
+
+    <script type="text/template" id="team">
+      <div class="left-align page-content padded">
+          <h1>team</h1>
+          <p>Here is a short paragraph about the echo team.</p>
+      </div>
+    </script>
+
+    <!-- jQuery -->
+    <script src="javascripts/lib/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="javascripts/lib/bootstrap.min.js"></script>
+
+    <!-- Load custom Javascript modules -->
+    <script data-main="javascripts/main.js" src="javascripts/lib/requirejs/require.js"></script>
+
+</body>
+
+</html>

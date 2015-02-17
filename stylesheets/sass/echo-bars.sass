@@ -1,0 +1,20 @@
+.echo-bars
+  cursor: pointer
+
+  @media (max-width: 500px)
+    display: none
+
+  li
+    display: inline
+    background-repeat: no-repeat
+    background-position: 0px center
+    margin-right: 20px
+    transition: all 1s
+    
+    &.echo-active
+      background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/longbar.png)
+      padding-left: 165px
+    
+    &.echo-inactive
+      background-image: url(file:///Users/ianzapolsky/projects/echo-site/images/smallerbar.png)
+      padding-left: 60px
