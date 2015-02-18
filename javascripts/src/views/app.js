@@ -21,7 +21,7 @@ define([
       /* Assign the width of the browser widnow to our slider container. */
       this.updateSliderWidth();
       /* Update width of slider pages when the browser window resizes. */
-      $(window).on('resize', _.throttle(this.updateSliderWidth, 100).bind(this));
+      $(window).on('resize', _.throttle(this.handleBrowserResize, 100).bind(this));
       /* Render page components. */
       this.renderPage();
     },
@@ -52,7 +52,8 @@ define([
     run: function(part, target) {
       $(part + ' .pan').stop().animate(
         {'margin-left': target},
-        1000
+        1000,
+        'swing'
       );
     },
 
@@ -66,16 +67,18 @@ define([
           $(node).removeClass('echo-active').addClass('echo-inactive');
       });
       /* Update the location of the download link. */
-      switch (this.page) {
-        case 0:
-          $('#echo-download-link').css({'margin-left': '-135px'});
-          break;
-        case 1:
-          $('#echo-download-link').css({'margin-left': '20px'});
-          break;
-        case 2:
-          $('#echo-download-link').css({'margin-left': '187px'});
-          break;
+      if ($(window).width() > 500) {
+        switch (this.page) {
+          case 0:
+            $('#echo-download-link').css({'margin-left': '-135px'});
+            break;
+          case 1:
+            $('#echo-download-link').css({'margin-left': '20px'});
+            break;
+          case 2:
+            $('#echo-download-link').css({'margin-left': '187px'});
+            break;
+        }
       }
     },
 
@@ -98,6 +101,11 @@ define([
       this.renderPage();
     },
 
+    handleBrowserResize: function() {
+      this.updateSliderWidth();
+      this.updateBars();
+    },
+
     updateSliderWidth: function() {
       var padding = Math.floor($(window).width() * .20);
       var windowWidth = $(window).width() - padding;
@@ -111,6 +119,13 @@ define([
       var target = (0 - width) * this.page;
       target *= 2;
       $('.pan').css({'margin-left': target});
+    },
+
+    updateBars: function() {
+      if ($(window).width() < 500)
+        $('#echo-download-link').css({'margin-left': '0px'});
+      else
+        this.renderBars();
     },
 
   });

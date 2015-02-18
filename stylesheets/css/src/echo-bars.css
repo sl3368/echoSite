@@ -2,7 +2,7 @@
 .echo-bars {
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   /* line 1, ../../sass/echo-bars.sass */
   .echo-bars {
     display: none;
@@ -14,14 +14,17 @@
   background-repeat: no-repeat;
   background-position: 0px center;
   margin-right: 20px;
-  transition: all 1s;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
-/* line 14, ../../sass/echo-bars.sass */
+/* line 17, ../../sass/echo-bars.sass */
 .echo-bars li.echo-active {
   background-image: url(http://ianzapolsky.com/echo-site/images/longbar.png);
   padding-left: 165px;
 }
-/* line 20, ../../sass/echo-bars.sass */
+/* line 23, ../../sass/echo-bars.sass */
 .echo-bars li.echo-inactive {
   background-image: url(http://ianzapolsky.com/echo-site/images/smallerbar.png);
   padding-left: 60px;

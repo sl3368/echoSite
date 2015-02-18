@@ -27,33 +27,33 @@ body {
 .echo-download {
   color: #eee;
 }
-@media (max-width: 500px) {
-  /* line 20, ../../sass/echo-main.sass */
-  .echo-download {
-    display: none;
-  }
-}
-/* line 26, ../../sass/echo-main.sass */
+/* line 23, ../../sass/echo-main.sass */
 .echo-download h1 {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 100;
   letter-spacing: 5px;
   margin-left: -135px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 /* line 34, ../../sass/echo-main.sass */
 .echo-download a {
   color: #eee;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 39, ../../sass/echo-main.sass */
+/* line 43, ../../sass/echo-main.sass */
 .echo-download a:hover {
   text-decoration: none;
   color: #F9D000 !important;
 }
-/* line 43, ../../sass/echo-main.sass */
+/* line 47, ../../sass/echo-main.sass */
 .echo-download a:visited {
   text-decoration: none;
 }
@@ -101,23 +101,26 @@ body {
   background-repeat: no-repeat;
   background-position: 0px center;
   cursor: pointer;
-  transition: all 1s;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
-/* line 31, ../../sass/echo-arrows.sass */
+/* line 34, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-left-arrow {
   float: left;
   background-image: url(http://ianzapolsky.com/echo-site/images/left.png);
 }
-/* line 37, ../../sass/echo-arrows.sass */
+/* line 40, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-left-arrow:hover {
   background-image: url(http://ianzapolsky.com/echo-site/images/leftyellow.png);
 }
-/* line 42, ../../sass/echo-arrows.sass */
+/* line 45, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-right-arrow {
   float: right;
   background-image: url(http://ianzapolsky.com/echo-site/images/right.png);
 }
-/* line 48, ../../sass/echo-arrows.sass */
+/* line 51, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-right-arrow:hover {
   background-image: url(http://ianzapolsky.com/echo-site/images/rightyellow.png);
 }
@@ -126,7 +129,7 @@ body {
 .echo-bars {
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   /* line 1, ../../sass/echo-bars.sass */
   .echo-bars {
     display: none;
@@ -138,14 +141,17 @@ body {
   background-repeat: no-repeat;
   background-position: 0px center;
   margin-right: 20px;
-  transition: all 1s;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
-/* line 14, ../../sass/echo-bars.sass */
+/* line 17, ../../sass/echo-bars.sass */
 .echo-bars li.echo-active {
   background-image: url(http://ianzapolsky.com/echo-site/images/longbar.png);
   padding-left: 165px;
 }
-/* line 20, ../../sass/echo-bars.sass */
+/* line 23, ../../sass/echo-bars.sass */
 .echo-bars li.echo-inactive {
   background-image: url(http://ianzapolsky.com/echo-site/images/smallerbar.png);
   padding-left: 60px;
@@ -224,14 +230,17 @@ body {
 #echo-content .page-content a {
   color: #eee;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 32, ../../sass/echo-text.sass */
+/* line 35, ../../sass/echo-text.sass */
 #echo-content .page-content a:hover {
   text-decoration: none;
   color: #F9D000 !important;
 }
-/* line 36, ../../sass/echo-text.sass */
+/* line 39, ../../sass/echo-text.sass */
 #echo-content .page-content a:visited {
   text-decoration: none;
 }

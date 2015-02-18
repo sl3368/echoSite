@@ -41,23 +41,26 @@
   background-repeat: no-repeat;
   background-position: 0px center;
   cursor: pointer;
-  transition: all 1s;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
-/* line 31, ../../sass/echo-arrows.sass */
+/* line 34, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-left-arrow {
   float: left;
   background-image: url(http://ianzapolsky.com/echo-site/images/left.png);
 }
-/* line 37, ../../sass/echo-arrows.sass */
+/* line 40, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-left-arrow:hover {
   background-image: url(http://ianzapolsky.com/echo-site/images/leftyellow.png);
 }
-/* line 42, ../../sass/echo-arrows.sass */
+/* line 45, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-right-arrow {
   float: right;
   background-image: url(http://ianzapolsky.com/echo-site/images/right.png);
 }
-/* line 48, ../../sass/echo-arrows.sass */
+/* line 51, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-right-arrow:hover {
   background-image: url(http://ianzapolsky.com/echo-site/images/rightyellow.png);
 }

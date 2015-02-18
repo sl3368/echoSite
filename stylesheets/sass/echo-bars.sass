@@ -1,7 +1,7 @@
 .echo-bars
   cursor: pointer
 
-  @media (max-width: 500px)
+  @media screen and (max-width: 500px)
     display: none
 
   li
@@ -9,7 +9,10 @@
     background-repeat: no-repeat
     background-position: 0px center
     margin-right: 20px
-    transition: all 1s
+    -webkit-transition: all 1s ease-in-out
+    -moz-transition: all 1s ease-in-out
+    -o-transition: all 1s ease-in-out
+    transition: all 1s ease-in-out
     
     &.echo-active
       background-image: url(http://ianzapolsky.com/echo-site/images/longbar.png)

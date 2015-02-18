@@ -50,14 +50,17 @@
 #echo-content .page-content a {
   color: #eee;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 32, ../../sass/echo-text.sass */
+/* line 35, ../../sass/echo-text.sass */
 #echo-content .page-content a:hover {
   text-decoration: none;
   color: #F9D000 !important;
 }
-/* line 36, ../../sass/echo-text.sass */
+/* line 39, ../../sass/echo-text.sass */
 #echo-content .page-content a:visited {
   text-decoration: none;
 }

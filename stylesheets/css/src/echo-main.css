@@ -27,33 +27,33 @@ body {
 .echo-download {
   color: #eee;
 }
-@media (max-width: 500px) {
-  /* line 20, ../../sass/echo-main.sass */
-  .echo-download {
-    display: none;
-  }
-}
-/* line 26, ../../sass/echo-main.sass */
+/* line 23, ../../sass/echo-main.sass */
 .echo-download h1 {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 100;
   letter-spacing: 5px;
   margin-left: -135px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 /* line 34, ../../sass/echo-main.sass */
 .echo-download a {
   color: #eee;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 39, ../../sass/echo-main.sass */
+/* line 43, ../../sass/echo-main.sass */
 .echo-download a:hover {
   text-decoration: none;
   color: #F9D000 !important;
 }
-/* line 43, ../../sass/echo-main.sass */
+/* line 47, ../../sass/echo-main.sass */
 .echo-download a:visited {
   text-decoration: none;
 }
