@@ -24,6 +24,7 @@ define([
       $(window).on('resize', _.throttle(this.handleBrowserResize, 100).bind(this));
       /* Render page components. */
       this.renderPage();
+      this.updateBars();
     },
 
     followEchoLink: function(ev) {
