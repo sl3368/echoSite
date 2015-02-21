@@ -10,6 +10,10 @@ define([
 
     page: 0,
 
+    lastScrollLeft: 0,
+
+    scrolling: false,
+
     events: {
       'click .echo-left-arrow': 'changePage',
       'click .echo-right-arrow': 'changePage',
@@ -25,8 +29,43 @@ define([
       /* Render page components. */
       this.renderPage();
       this.updateBars();
+      /* Attach scroll events. */
+      $(window).scroll(_.throttle(this.changePageWithSwipe, 100).bind(this));
     },
 
+    changePageWithSwipe: function(ev) {
+      ev.preventDefault();
+      if (!this.scrolling) {
+        this.scrolling = true;
+        var documentScrollLeft = $(document).scrollLeft();
+        if (this.lastScrollLeft > documentScrollLeft) {
+          this.prevPage();
+          setTimeout(function() {
+            this.scrolling = false;
+          }.bind(this), 1000);
+        } else if (this.lastScrollLeft < documentScrollLeft) {
+          this.nextPage();
+          setTimeout(function() {
+            this.scrolling = false;
+          }.bind(this), 1000);
+        }
+      } else {
+        ev.stopImmediatePropagation();
+      }
+    },
+
+    nextPage: function() {
+      if (this.page < 2)
+        this.page += 1;
+      this.renderPage();
+    },
+
+    prevPage: function() {
+      if (this.page > 0)
+        this.page -= 1;
+      this.renderPage();
+    },
+        
     followEchoLink: function(ev) {
       var templateName = $(ev.currentTarget).attr('data-template-name');
       console.log(templateName);
