@@ -58,6 +58,11 @@ body {
   text-decoration: none;
 }
 
+/* line 50, ../../sass/echo-main.sass */
+.close-bottom {
+  margin-bottom: -20px;
+}
+
 /* line 1, ../../sass/echo-arrows.sass */
 .echo-arrows {
   position: absolute;
@@ -160,15 +165,18 @@ body {
 /* line 3, ../../sass/echo-slider.sass */
 #echo-content {
   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
   position: relative;
   overflow: hidden;
 }
-/* line 8, ../../sass/echo-slider.sass */
+/* line 11, ../../sass/echo-slider.sass */
 #echo-content .pan {
   width: 10000px;
   position: static;
 }
-/* line 12, ../../sass/echo-slider.sass */
+/* line 15, ../../sass/echo-slider.sass */
 #echo-content .page {
   width: 1200px;
   max-height: 400px;
@@ -287,11 +295,16 @@ body {
 }
 
 /* line 26, ../../sass/stock.sass */
+.padder-xs {
+  min-height: 25px;
+}
+
+/* line 29, ../../sass/stock.sass */
 .padder-responsive {
   min-height: 150px;
 }
 @media (max-width: 500px) {
-  /* line 26, ../../sass/stock.sass */
+  /* line 29, ../../sass/stock.sass */
   .padder-responsive {
     min-height: 50px;
   }

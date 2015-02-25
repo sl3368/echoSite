@@ -40,11 +40,16 @@
 }
 
 /* line 26, ../../sass/stock.sass */
+.padder-xs {
+  min-height: 25px;
+}
+
+/* line 29, ../../sass/stock.sass */
 .padder-responsive {
   min-height: 150px;
 }
 @media (max-width: 500px) {
-  /* line 26, ../../sass/stock.sass */
+  /* line 29, ../../sass/stock.sass */
   .padder-responsive {
     min-height: 50px;
   }

@@ -57,3 +57,8 @@ body {
 .echo-download a:visited {
   text-decoration: none;
 }
+
+/* line 50, ../../sass/echo-main.sass */
+.close-bottom {
+  margin-bottom: -20px;
+}

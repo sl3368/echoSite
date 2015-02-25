@@ -2,6 +2,7 @@ define([
   'underscore',
   'jquery',
   'backbone',
+  'jquery-mobile',
 ], function(_, $, Backbone) {
 
   var App = Backbone.View.extend({
@@ -10,15 +11,14 @@ define([
 
     page: 0,
 
-    lastScrollLeft: 0,
-
-    scrolling: false,
-
     events: {
       'click .echo-left-arrow': 'changePage',
       'click .echo-right-arrow': 'changePage',
       'click .echo-inactive': 'changePage',
       'click .echo-link': 'followEchoLink',
+      'keyup': 'changePageWithKey',
+      'swipeleft .echo-container': 'nextPage',
+      'swiperight .echo-container': 'prevPage',
     }, 
 
     initialize: function() {
@@ -29,29 +29,21 @@ define([
       /* Render page components. */
       this.renderPage();
       this.updateBars();
-      /* Attach scroll events. */
-      $(window).scroll(_.throttle(this.changePageWithSwipe, 100).bind(this));
+    },
+
+    changePageWithKey: function(ev) {
+      ev.preventDefault();
+      if (!this.scrolling) {
+        if (ev.keyCode === 37) {
+          this.prevPage();
+        } else if (ev.keyCode === 39) {
+          this.nextPage();
+        }
+      } 
     },
 
     changePageWithSwipe: function(ev) {
-      ev.preventDefault();
-      if (!this.scrolling) {
-        this.scrolling = true;
-        var documentScrollLeft = $(document).scrollLeft();
-        if (this.lastScrollLeft > documentScrollLeft) {
-          this.prevPage();
-          setTimeout(function() {
-            this.scrolling = false;
-          }.bind(this), 1000);
-        } else if (this.lastScrollLeft < documentScrollLeft) {
-          this.nextPage();
-          setTimeout(function() {
-            this.scrolling = false;
-          }.bind(this), 1000);
-        }
-      } else {
-        ev.stopImmediatePropagation();
-      }
+      console.log('hello');
     },
 
     nextPage: function() {
