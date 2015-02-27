@@ -1,0 +1,26 @@
+/* line 1, ../../sass/echo-gif.sass */
+.echo-gif {
+  margin-top: -25px;
+  max-height: 400px;
+}
+@media (max-width: 700px) {
+  /* line 1, ../../sass/echo-gif.sass */
+  .echo-gif {
+    margin-top: 0px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 600px) {
+  /* line 1, ../../sass/echo-gif.sass */
+  .echo-gif {
+    margin-left: -50px;
+  }
+}
+@media (max-width: 340px) {
+  /* line 1, ../../sass/echo-gif.sass */
+  .echo-gif {
+    margin-top: 0px;
+    max-width: 330px;
+    margin-left: -35px;
+  }
+}
