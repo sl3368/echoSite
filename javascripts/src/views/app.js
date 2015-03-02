@@ -60,7 +60,6 @@ define([
         
     followEchoLink: function(ev) {
       var templateName = $(ev.currentTarget).attr('data-template-name');
-      console.log(templateName);
       var content = _.template( $('#' + templateName).html());
       $('#echo-dynamic').html(content);
       this.page += 1;
