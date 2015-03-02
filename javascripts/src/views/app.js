@@ -24,8 +24,10 @@ define([
     initialize: function() {
       /* Assign the width of the browser widnow to our slider container. */
       this.updateSliderWidth();
+
       /* Update width of slider pages when the browser window resizes. */
       $(window).on('resize', _.throttle(this.handleBrowserResize, 100).bind(this));
+
       /* Render page components. */
       this.renderPage();
       this.updateBars();
@@ -42,20 +44,18 @@ define([
       } 
     },
 
-    changePageWithSwipe: function(ev) {
-      console.log('hello');
-    },
-
     nextPage: function() {
-      if (this.page < 2)
+      if (this.page < 2) {
         this.page += 1;
-      this.renderPage();
+        this.renderPage();
+      }
     },
 
     prevPage: function() {
-      if (this.page > 0)
+      if (this.page > 0) {
         this.page -= 1;
-      this.renderPage();
+        this.renderPage();
+      }
     },
         
     followEchoLink: function(ev) {
@@ -67,7 +67,6 @@ define([
       this.renderSlider();
     },
 
-        
     renderPage: function() {
       this.renderSlider();
       this.renderArrows();
@@ -91,6 +90,7 @@ define([
 
     renderBars: function() {
       var _this = this;
+
       /* Update the sizes of the bars themselves. */
       _.forEach($('.echo-bars li'), function(node, index) {
         if (index === _this.page)
@@ -98,6 +98,7 @@ define([
         else
           $(node).removeClass('echo-active').addClass('echo-inactive');
       });
+
       /* Update the location of the download link. */
       if ($(window).width() > 500) {
         switch (this.page) {
@@ -158,7 +159,7 @@ define([
         $('#echo-download-link').css({'margin-left': '0px'});
       else
         this.renderBars();
-    },
+    }
 
   });
 
