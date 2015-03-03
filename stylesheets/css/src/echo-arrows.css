@@ -1,40 +1,8 @@
 /* line 1, ../../sass/echo-arrows.sass */
 .echo-arrows {
-  position: absolute;
-  top: 0;
-  margin-top: 11%;
+  position: relative;
 }
-@media (max-width: 992px) {
-  /* line 1, ../../sass/echo-arrows.sass */
-  .echo-arrows {
-    margin-top: 15%;
-  }
-}
-@media (max-width: 750px) {
-  /* line 1, ../../sass/echo-arrows.sass */
-  .echo-arrows {
-    margin-top: 10%;
-    position: relative;
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-}
-@media (max-width: 750px) and (max-width: 600px) {
-  /* line 1, ../../sass/echo-arrows.sass */
-  .echo-arrows {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-@media (max-width: 750px) and (max-width: 400px) {
-  /* line 1, ../../sass/echo-arrows.sass */
-  .echo-arrows {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-/* line 23, ../../sass/echo-arrows.sass */
+/* line 4, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-left-arrow, .echo-arrows .echo-right-arrow {
   height: 40px;
   width: 25px;
@@ -46,21 +14,21 @@
   -o-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
-/* line 34, ../../sass/echo-arrows.sass */
+/* line 15, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-left-arrow {
   float: left;
   background-image: url(http://ianzapolsky.com/echo-site/images/left.png);
 }
-/* line 40, ../../sass/echo-arrows.sass */
+/* line 21, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-left-arrow:hover {
   background-image: url(http://ianzapolsky.com/echo-site/images/leftyellow.png);
 }
-/* line 45, ../../sass/echo-arrows.sass */
+/* line 26, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-right-arrow {
   float: right;
   background-image: url(http://ianzapolsky.com/echo-site/images/right.png);
 }
-/* line 51, ../../sass/echo-arrows.sass */
+/* line 32, ../../sass/echo-arrows.sass */
 .echo-arrows .echo-right-arrow:hover {
   background-image: url(http://ianzapolsky.com/echo-site/images/rightyellow.png);
 }
