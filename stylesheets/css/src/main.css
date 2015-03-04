@@ -288,6 +288,13 @@ body {
   text-decoration: none;
 }
 
+#downloadIssues {
+  height:140px; 
+  width:80%;
+  overflow:hidden; 
+  overflow-y:scroll;
+}
+
 /* line 1, ../../sass/stock.sass */
 .centered {
   float: none;
