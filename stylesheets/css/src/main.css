@@ -290,7 +290,7 @@ body {
 
 #downloadIssues {
   height:120px; 
-  width:80%;
+  width:90%;
   overflow:hidden; 
   overflow-y:scroll;
 }
