@@ -77,6 +77,7 @@ define([
       var target = (0 - width) * this.page;
       target *= 2; 
       this.run('#echo-content', target);
+      this.updateScrollable();
     },
 
     run: function(part, target) {
@@ -136,6 +137,11 @@ define([
     handleBrowserResize: function() {
       this.updateSliderWidth();
       this.updateBars();
+      this.updateScrollable();
+    },
+
+    updateScrollable: function() {
+      $('.scrollable').css({'height': $('#echo-content').height()});
     },
 
     updateSliderWidth: function() {

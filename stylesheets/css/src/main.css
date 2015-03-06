@@ -288,11 +288,11 @@ body {
   text-decoration: none;
 }
 
-#downloadIssues {
-  height:120px; 
-  width:90%;
-  overflow:hidden; 
-  overflow-y:scroll;
+.scrollable {
+  height: 120px; 
+  width: 100%;
+  overflow: hidden; 
+  overflow-y: scroll;
 }
 
 /* line 1, ../../sass/stock.sass */
