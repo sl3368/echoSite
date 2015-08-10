@@ -3,17 +3,31 @@
   <title>Echo Page</title>
   <script src="https://w.soundcloud.com/player/api.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
   <h1>Echo</h1>
   <a href="#" id="play">Play</a>
   <a href="#" id="pause">Pause</a>
   <p>http://echoserver.com/songs/<%= song_id %></p>
-  <div style="height: 100px; position:fixed">
-    <iframe width='100%' height='1' scrolling='no' frameborder='no' id="my-player" src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= song_id %>&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false&amp;show_artwork=false'></iframe>
+  <div style="height: 1px; position:fixed">
+    <iframe width='100%' height='100' scrolling='no' frameborder='no' id="my-player" src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= song_id %>&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false&amp;show_artwork=false'></iframe>
   </div>
  
-  <div style="display: none;" id="app-store">APP STORE</div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-center">  <a href="https://itunes.apple.com/us/app/echo-music/id931298425?mt=8">Download the Echo App</a></h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-center"><a href="https://itunes.apple.com/us/app/echo-music/id931298425?mt=8">Share music with your friends.</a> </p>
+          <p class="text-center"><a href="https://itunes.apple.com/us/app/echo-music/id931298425?mt=8"><img src="/images/logo_appstore.png" width="150"></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
  
   <script type="text/javascript">
     $(function () {
@@ -25,9 +39,9 @@
         widget.pause()
       });
       widget.bind(SC.Widget.Events.PLAY_PROGRESS, function (opts) {
-        if (opts.relativePosition > 0.5) {
+        if (opts.relativePosition > 0.3) {
           widget.pause();
-          $('#app-store').show();
+          $('#myModal').modal();
         }
       });
     });
